@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Table Roller</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎲 DM Table Dashboard</h1>
+    </header>
+
+    <main id="app-container">
+        <section id="home-view">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search tables (e.g., 'oracle', 'loot')...">
+            </div>
+            <div id="table-list" class="table-grid"></div>
+        </section>
+
+        <section id="table-view" class="hidden">
+            <button id="back-btn" class="btn-secondary">← Back to Dashboard</button>
+            
+            <div class="table-header-block">
+                <h2 id="current-table-title">Table Title</h2>
+                <p id="current-table-desc">Table description goes here.</p>
+            </div>
+
+            <div class="roller-zone">
+                <div id="custom-modifier-zone"></div>
+
+                <button id="roll-btn" class="btn-primary">Roll on Table</button>
+                <div id="roll-output" class="output-box">Click the button to roll...</div>
+            </div>
+
+            <div class="raw-table-display">
+                <h3>Full Table Entries</h3>
+                <ol id="current-table-rows"></ol>
+            </div>
+        </section>
+    </main>
+
+    <script src="tables/oracle.js"></script>
+    <script src="tables/weather.js"></script>
+    <script src="tables/what_wakes_you.js"></script>
+    <script src="tables/tavern_names.js"></script>
+    <script src="tables/tavern_details.js"></script>
+    <script src="tables/rumours.js"></script>
+    <script src="tables/location_encounters.js"></script>
+    <script src="tables/quests.js"></script>
+    <script src="tables/clues.js"></script>
+    <script src="tables/settlement_merchants.js"></script>
+    <script src="tables/regional_events.js"></script>
+    <script src="tables/creatures.js"></script>
+    <script src="tables/situations.js"></script>
+    <script src="tables/traps.js"></script>
+    <script src="tables/settlement_builder.js"></script>
+    <script src="tables/narrative_encounters.js"></script>
+    <script src="tables/boons_banes.js"></script>
+    <script src="tables/items.js"></script>
+    <script src="tables/magic_items.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

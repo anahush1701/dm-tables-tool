@@ -1,0 +1,71 @@
+window.tablesDatabase = window.tablesDatabase || [];
+
+window.tablesDatabase.push({
+    id: "situations-verbs",
+    title: "Situations Table (Verb List)",
+    description: "Roll a d10 hundreds bracket and a d100 unit selector to extract a narrative verb for scene interpretation.",
+    type: "situations-verbs",
+    category: "core",
+    entries: [
+        // 1 - 48
+        "abandon", "abolish", "abuse", "accuse", "address", "aggravate", "agitate", "aid", "aim", "alarm", 
+        "alert", "alter", "amaze", "ambush", "amuse", "annihilate", "annoy", "antagonize", "appeal", "applaud", 
+        "apprehend", "approach", "argue", "arise", "arouse", "arrange", "arrest", "ask", "assassinate", "assault", 
+        "assemble", "astonish", "attack", "attempt", "attend", "auction", "audition", "avenge", "avert", "babble", 
+        "badmouth", "bait", "ban", "banish", "baptize", "bargain", "bark", "barricade",
+        // 49 - 96
+        "barter", "bash", "bawl", "beautify", "beckon", "befriend", "beg", "beguile", "belch", "belittle", 
+        "bellow", "bemoan", "bequeath", "berate", "besiege", "bestow", "bet", "betray", "bewilder", "bewitch", 
+        "bid", "bite", "blab", "blame", "blast", "bleed", "bless", "blunder", "blurt", "boast", 
+        "bother", "bow", "brag", "break", "bribe", "broadcast", "build", "capture", "careen", "caress", 
+        "carry", "carve", "catch", "celebrate", "challenge", "charm", "chase", "cheat",
+        // 97 - 144
+        "choke", "claim", "climb", "collaborate", "collapse", "collide", "command", "complain", "compliment", "conceal", 
+        "concoct", "condemn", "confiscate", "conflict", "confront", "confuse", "congratulate", "congregate", "conjure", "consecrate", 
+        "consider", "construct", "contact", "contaminate", "contest / converse", "cook", "corner", "corrupt", "cremate", "crowd", 
+        "crown", "customize", "damage", "dance", "dare", "dash", "dazzle", "deal", "debate", "decay", 
+        "deceive", "declare", "decline", "decompose", "decorate", "decree", "dedicate", "deduce",
+        // 145 - 195
+        "deface", "defeat", "defend", "defuse", "deliver", "demand", "demolish", "denounce", "deride", "despair", 
+        "destroy", "devour", "dig", "disappear", "disarm", "discipline", "discover", "discriminate", "discuss", "disgrace", 
+        "disguise", "disgust", "dishonor", "dismount", "dispel", "disperse", "display", "displease", "dispute", "disrespect", 
+        "disrupt", "distill", "distress", "disturb", "divert", "dodge", "drag", "dress", "drink", "drop", 
+        "drown", "drum", "dump", "dupe", "duplicate", "earn", "eat", "elude", "employ", "enchant", "end",
+        // 196 - 246
+        "endanger", "endear", "endorse", "enforce", "engage", "engineer", "enjoy", "enlarge", "enlighten", "enlist", 
+        "enquire", "enrage", "enrich", "enroll", "enshrine", "ensnare", "entangle", "enter", "entertain", "entice", 
+        "erect", "escape", "escort", "evacuate", "evade", "evict", "exaggerate", "examine", "excavate", "exchange", 
+        "exclaim", "exclude", "execute", "exhibit", "experiment", "explode", "expose", "faint", "fake", "fall", 
+        "falsify", "fashion", "flaunt", "flee", "fling", "flirt", "follow", "force", "foresee", "foretell", "forge",
+        // 247 - 297
+        "forgive", "fracture", "frame", "free", "freeze", "fret", "frighten", "frustrate", "fumble", "fund", 
+        "fuss", "gallop", "gamble", "gather", "gaze", "gesture", "gift", "giggle", "give", "glare", 
+        "gleam", "glimpse", "goad", "gob", "goggle", "gossip", "grab", "grapple", "grieve", "guard", 
+        "hamper", "harass", "harm", "help", "hide", "hit", "hold", "humiliate", "hurry", "hurtle", 
+        "ignite", "impede", "implore", "imprison", "infect", "infest", "inflame", "inflict", "inform", "infringe", "infuriate",
+        // 298 - 348
+        "injure", "inspect", "inspire", "instigate", "insult", "interfere", "interrogate", "intimidate", "intoxicate", "investigate", 
+        "invite", "involve", "irritate", "jaywalk", "jeer", "joke", "jostle", "kick", "kill", "kiss", 
+        "lament", "laugh", "leap", "lecture", "leer", "look", "loot", "lose", "love", "lunge", 
+        "lurk", "maim", "manhandle", "march", "market", "massacre", "meddle", "mesmerize", "mimic", "misspell", 
+        "mob", "mock", "murder", "mutate", "mutilate", "nag", "narrate", "near", "notify", "obscure", "observe",
+        // 349 - 399
+        "obstruct", "offend", "oppress", "order", "overhear", "overpower", "overturn", "parade", "parley", "patrol", 
+        "pelt", "penalize", "perform", "persecute", "persuade", "petition", "play", "plead", "plunder", "pollute", 
+        "pounce", "practice", "praise", "preach", "proclaim", "prohibit", "promote", "pronounce", "prophesize", "prosecute", 
+        "protect", "protest", "provide", "provoke", "prowl", "pry", "punch", "punish", "purchase", "pursue", 
+        "push", "quarrel", "query", "queue", "rage", "raid", "ransack", "rebel", "recite", "recount", "recruit",
+        // 400 - 450
+        "rejoice", "remark", "renege", "repair", "research", "rescue", "resist", "restrain", "resurrect", "reveal", 
+        "revolt", "reward", "ridicule", "riot", "rob", "run", "rush", "salute", "scamper", "scare", 
+        "scavenge", "scream", "scrounge", "search", "secure", "seduce", "segregate", "seize", "sell", "ship", 
+        "shout", "subdue", "show", "silence", "sing", "slaughter", "sleep", "smash", "sob", "solicit", 
+        "speak", "spill", "spit", "spy", "stab", "stage", "startle", "steal", "stop", "strangle", "strike",
+        // 451 - 499
+        "subdue", "suffer", "summon", "surround", "suspect", "take", "taunt", "tease", "tempt", "terrify", 
+        "terrorize", "thank", "threaten", "throw", "torment", "torture", "trade", "transform", "translate", "transport", 
+        "trap", "travel", "tug", "unite", "unleash", "unload", "unveil", "vandalize", "vanish", "victimize", 
+        "violate", "volunteer", "wait", "warn", "wave", "weep", "welcome", "whittle", "wield", "win", 
+        "wink", "witness", "worship", "wound", "wreck", "wrestle", "write", "yell", "yield"
+    ]
+});
